@@ -1,0 +1,88 @@
+﻿15:10.530017-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=560,t:clientID=48,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=26,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+15:29.468023-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=560,t:clientID=49,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=27,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+15:48.499000-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=1092,t:clientID=50,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=28,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+16:07.765017-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=1216,t:clientID=60,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=37,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+16:26.718001-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3128,t:clientID=61,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=38,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+16:44.968005-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3264,t:clientID=62,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=39,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+17:03.719007-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3108,t:clientID=64,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=41,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+17:19.344002-0,EXCP,3,process=rphost,p:processName=VivatTrade,OSThread=3108,t:clientID=65,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=42,Exception=a01f465c-ed70-442e-ada5-847668d7a41c,Descr='src\VResourceInfoBaseServerImpl.cpp(1337):
+a01f465c-ed70-442e-ada5-847668d7a41c: User identification failed
+Incorrect user name or password'
+17:19.344003-0,EXCP,3,process=rphost,p:processName=VivatTrade,OSThread=3108,t:clientID=65,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=42,Exception=580392e6-ba49-4280-ac67-fcd6f2180121,Descr='src\VResourceInfoBaseImpl.cpp(1105):
+580392e6-ba49-4280-ac67-fcd6f2180121: Invalid user name or password
+Error executing the query POST to resource /e1cib/login:'
+17:19.375001-0,EXCP,3,process=rphost,p:processName=VivatTrade,OSThread=3108,t:clientID=65,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=42,Exception=a01f465c-ed70-442e-ada5-847668d7a41c,Descr='src\VResourceInfoBaseServerImpl.cpp(1337):
+a01f465c-ed70-442e-ada5-847668d7a41c: User identification failed
+Incorrect user name or password'
+17:19.375002-0,EXCP,3,process=rphost,p:processName=VivatTrade,OSThread=3108,t:clientID=65,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=42,Exception=580392e6-ba49-4280-ac67-fcd6f2180121,Descr='src\VResourceInfoBaseImpl.cpp(1105):
+580392e6-ba49-4280-ac67-fcd6f2180121: Invalid user name or password
+Error executing the query POST to resource /e1cib/login:'
+17:21.687023-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3128,t:clientID=66,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=43,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+17:39.641000-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3128,t:clientID=67,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=44,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+17:52.828015-0,EXCP,2,process=rphost,p:processName=PMC,OSThread=3108,t:clientID=68,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=46,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+17:57.687011-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3108,t:clientID=70,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=47,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+18:15.844002-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3292,t:clientID=73,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=51,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+18:20.187000-0,EXCP,3,process=rphost,p:processName=VivatTrade,OSThread=3740,t:clientID=65,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=42,SessionID=3,Usr=Pavel Zhgulev,AppID=1CV8C,Exception=580392e6-ba49-4280-ac67-fcd6f2180121,Descr='src\VResourceInfoBaseImpl.cpp(1131):
+580392e6-ba49-4280-ac67-fcd6f2180121: Non-specified resource error
+Error executing the query POST to resource /e1cib/debug:
+c329df92-3ba7-4d5d-937b-951d91ac0ac0: Invalid object state
+[dbgtgt - src\IDebugTargetRegistrationImpl.cpp (389)]'
+18:33.844023-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3288,t:clientID=74,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=53,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+18:52.734002-0,EXCP,2,process=rphost,p:processName=VivatTrade,OSThread=3304,t:clientID=80,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=57,Exception=a01f465c-ed70-442e-ada5-847668d7a41c,Descr='src\VResourceInfoBaseServerImpl.cpp(1337):
+a01f465c-ed70-442e-ada5-847668d7a41c: User identification failed
+Incorrect user name or password'
+18:52.734003-0,EXCP,2,process=rphost,p:processName=VivatTrade,OSThread=3304,t:clientID=80,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=57,Exception=580392e6-ba49-4280-ac67-fcd6f2180121,Descr='src\VResourceInfoBaseImpl.cpp(1105):
+580392e6-ba49-4280-ac67-fcd6f2180121: Invalid user name or password
+Error executing the query POST to resource /e1cib/login:'
+18:52.750017-0,EXCP,2,process=rphost,p:processName=VivatTrade,OSThread=3304,t:clientID=80,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=57,Exception=a01f465c-ed70-442e-ada5-847668d7a41c,Descr='src\VResourceInfoBaseServerImpl.cpp(1337):
+a01f465c-ed70-442e-ada5-847668d7a41c: User identification failed
+Incorrect user name or password'
+18:52.750018-0,EXCP,2,process=rphost,p:processName=VivatTrade,OSThread=3304,t:clientID=80,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=57,Exception=580392e6-ba49-4280-ac67-fcd6f2180121,Descr='src\VResourceInfoBaseImpl.cpp(1105):
+580392e6-ba49-4280-ac67-fcd6f2180121: Invalid user name or password
+Error executing the query POST to resource /e1cib/login:'
+18:53.156027-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3288,t:clientID=77,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=58,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+19:06.672026-0,EXCP,3,process=rphost,p:processName=VivatTrade,OSThread=3292,t:clientID=65,t:applicationName=1CV8C,t:computerName=BET-C,t:connectID=42,SessionID=3,Usr=Pavel Zhgulev,AppID=1CV8C,Exception=afd2b550-0d52-4e03-b448-15ed68d87ac5,Descr='src\RTLogFormSrv.cpp(6003):
+afd2b550-0d52-4e03-b448-15ed68d87ac5: Form is not available for use',Context=Система.ПолучитьФорму : Задача.ЗадачаИсполнителя.Форма.МоиЗадачиДляРабочегоСтола; ЖурналДокументов.Взаимодействия.Форма.ФормаСписка; Обработка.ТекущиеДела.Форма.Форма; ОбщаяФорма.ИнформационнаяПанель
+19:11.984025-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=2680,t:clientID=84,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=62,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+19:30.937005-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3740,t:clientID=85,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=63,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+19:49.641008-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3740,t:clientID=86,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=64,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+20:07.733019-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=3292,t:clientID=89,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=66,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+20:25.686003-0,EXCP,3,process=rphost,p:processName=PMC,OSThread=2680,t:clientID=90,t:applicationName=BackgroundJob,t:computerName=1C-83151656,t:connectID=67,Exception=9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3,Descr="src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"

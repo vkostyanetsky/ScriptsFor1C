@@ -1,0 +1,22 @@
+19 "src\DataSeparationService.cpp(4619):
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'v8srvr://1C-83151656/PMC/Files/SprScndInfo': src\FolderFilesImpl.cpp(343): 
+9db1fa37-b455-4f3f-b8dd-7de0ea7d6da3: Файл не обнаружен 'PMC/Files/SprScndInfo': src\FileHostImpl.cpp(1187)"
+
+4 'src\VResourceInfoBaseServerImpl.cpp(1337):
+a01f465c-ed70-442e-ada5-847668d7a41c: User identification failed
+Incorrect user name or password'
+
+4 'src\VResourceInfoBaseImpl.cpp(1105):
+580392e6-ba49-4280-ac67-fcd6f2180121: Invalid user name or password
+Error executing the query POST to resource /e1cib/login:'
+
+1 'src\VResourceInfoBaseImpl.cpp(1131):
+580392e6-ba49-4280-ac67-fcd6f2180121: Non-specified resource error
+Error executing the query POST to resource /e1cib/debug:
+c329df92-3ba7-4d5d-937b-951d91ac0ac0: Invalid object state
+[dbgtgt - src\IDebugTargetRegistrationImpl.cpp (389)]'
+
+1 'src\RTLogFormSrv.cpp(6003):
+afd2b550-0d52-4e03-b448-15ed68d87ac5: Form is not available for use',Context=Система.ПолучитьФорму : Задача.ЗадачаИсполнителя.Форма.МоиЗадачиДляРабочегоСтола; ЖурналДокументов.Взаимодействия.Форма.ФормаСписка; Обработка.ТекущиеДела.Форма.Форма; ОбщаяФорма.ИнформационнаяПанель
+
+
