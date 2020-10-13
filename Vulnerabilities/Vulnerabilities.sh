@@ -20,5 +20,7 @@ find . -name "*.bsl" -print0 | xargs -0 egrep "(ftp|http|https):\/\/[^ \"]+" > I
 find . -name "*.bsl" -print0 | xargs -0 egrep "([0-9]{1,3}[\.]){3}[0-9]{1,3}" > InlineIPs.txt
 
 # Поиск ролей с правом интерактивного удаления.
+#
+# Логика: ищет в XML-файлах ролей значение «true» на следующей строке после строки права интерактивного удаления.
 
 grep -A1 "<name>InteractiveDelete</name>" Roles/*/Ext/Rights.xml | grep "<value>true</value>" > InteractiveDelete.txt
