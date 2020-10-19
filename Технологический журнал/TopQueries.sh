@@ -11,7 +11,7 @@ cat rphost_*/*.log |
 #
 sed -r "/^p_[0-9]+:/d" |
 
-# Скрипт разделяет лог по метке времени события и работает только с событияеми DBMSSQL.
+# Скрипт разделяет лог по метке времени события и работает только с событиями DBMSSQL.
 # Каждое событие разделяется по подстроке «Sql=»; таким образом, в первом поле у нас будет
 # строка события до текста запроса, во втором поле — Sql, Rows, RowsAffected и Context.
 #
@@ -24,38 +24,50 @@ sed -r "/^p_[0-9]+:/d" |
 # и заменяем переводы строк на подстроку <LF> (если этого не сделать — сортировать будет неудобно).
 #
 # Скрипт делится на две части; первая собирает данные в массивы QueriesDuration и QueriesExecuted.
-# Первый храрнит общую длительность запросов, второй — количество их выполнений. Ключи каждого — 
+# Первый хранит общую длительность запросов, второй — количество их выполнений. Ключи каждого — 
 # текст запроса и его контекст.
 #
 # Завершающая часть скрипта считает общую и среднюю продолжительность запросов в секундах, 
 # форматирует и выводит.
 #
 gawk -F'Sql=' -vRS='[0-9]+:[0-9]+.[0-9]+-' '
-{    
-    if ( $1 ~ "^.*,DBMSSQL.*" ) {
-       
-        split($1, parts, ",");
-       
-        gsub("\n", "<LF>", $2);
-        gsub("#tt[0-9]+", "#tt", $2);
-        gsub("Rows=[0-9]+,RowsAffected=[0-9]+,", "", $2);
 
-        QueriesDuration[$2] += parts[1];
-        QueriesExecuted[$2] += 1;
+function StringBeforeComma(StringWithComma)
+{
+    return substr(StringWithComma, 0, index(StringWithComma, ",") - 1);
+}
+
+function SqlAndContext(StringAfterSql)
+{
+    gsub("\n+$", "", StringAfterSql);
+    gsub("\n", "<LF>", StringAfterSql);
+    gsub("#tt[0-9]+", "#tt", StringAfterSql);
+    gsub("Rows=[0-9]+,RowsAffected=[0-9]+,", "", StringAfterSql);
+
+    return StringAfterSql;
+}
+
+{
+    if ( $1 ~ "^.*,DBMSSQL.*" ) {
+
+        Duration = StringBeforeComma($1);
+        Grouping = SqlAndContext($2);
+
+        QueriesDuration[Grouping] += Duration;
+        QueriesExecuted[Grouping] += 1;
     }
 };
-END {
 
+END {
     for (Query in QueriesDuration) {
     
         executedTotal   = QueriesExecuted[Query]
         durationTotal   = QueriesDuration[Query] / 1000000;
         durationAverage = QueriesDuration[Query] / QueriesExecuted[Query] / 1000000;
         
-        printf "%.3f seconds total, %.3f seconds on average, %d executions<LF>%s\n", durationTotal, durationAverage, executedTotal, Query;
+        printf "%.3f seconds total, %.3f seconds on average, %d executions<LF>%s<LF>\n", durationTotal, durationAverage, executedTotal, Query;
         
     }
-        
 }
 ' |
 
@@ -65,7 +77,6 @@ sort -rn |
 head -n 100 |
 
 # Мы заменяли переводы строк на подстроку <LF>, чтобы в дальнейшем результат можно было отсортировать утилитой sort.
-#
 # Поскольку сортировка проделана, можно сделать обратную замену — тогда результат будет удобнее читать.
 #
 sed -r "s/<LF>/\n/g" > TopQueries.txt
