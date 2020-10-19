@@ -36,16 +36,27 @@ sed -r "s/server_addr=\(.*:[0-9]+/server_addr=(00)[::0]:00000/g" |
 # FIXME В некоторых случаях скрипт не группирует пустые описания. Вероятно, какие-то спецсимволы мешают, нужно разобраться.
 #
 gawk -F'Descr=' -vRS='[0-9]+:[0-9]+.[0-9]+-' '
+
+function Description(StringAfterDescription)
+{
+    gsub("\n+$", "", StringAfterDescription);
+    gsub("\n", "<LF>", StringAfterDescription);
+
+    return StringAfterDescription;
+}
+
 {  
     if ( $1 ~ "^.*,EXCP,.*" ) {
-        gsub("\n", "<LF>", $2);
-        descriptions[$2] += 1;
+
+        Grouping = Description($2); 
+        Quantity[Grouping] += 1;
+
     }
 };
 
 END {
-    for (description in descriptions)
-        print descriptions[description] " " description
+    for (Grouping in Quantity)
+        print Quantity[Grouping] " " Grouping "<LF>"
 }' |
     
 # На этот момент у нас есть что-то вроде:
