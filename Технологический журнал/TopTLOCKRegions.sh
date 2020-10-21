@@ -31,11 +31,11 @@ gawk '{
 
     for (Regions in DurationByRegions) {
     
-        totalQuantity   = QuantityByRegions[Regions];
-        totalDuration   = DurationByRegions[Regions] / 1000000;
-        averageDuration = DurationByRegions[Regions] / QuantityByRegions[Regions] / 1000000;
+        TotalQuantity   = QuantityByRegions[Regions];
+        TotalDuration   = DurationByRegions[Regions] / 1000000;
+        AverageDuration = DurationByRegions[Regions] / QuantityByRegions[Regions] / 1000000;
     
-        printf "%.3f seconds total, %.3f seconds on average, %d locks: %s\n", totalDuration, averageDuration, totalQuantity, Regions;
+        printf "%.3f seconds total, %.3f seconds on average, %d locks: %s\n", TotalDuration, AverageDuration, TotalQuantity, Regions;
     
     }
 
