@@ -41,7 +41,6 @@ gawk -F',Context=' -vRS='[0-9]+:[0-9]+.[0-9]+-' '{
 }' |
 
 sort -rn |
-
 head -n 100 |
 
 sed -r "s/<LF>/\n/g" > TopTLOCKContext.txt
