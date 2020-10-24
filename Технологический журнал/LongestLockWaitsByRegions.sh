@@ -7,6 +7,10 @@
 #
 cat rphost_*/*.log |
 
+# Удаляем из потока данных UTF-8 BOM.
+#
+perl -pe 's/\xef\xbb\xbf//g' |
+
 # Фильтруем TLOCK'и, у которых заполнено свойство WaitConnections (т.е. платформа реально ждала возможности установить
 # управляемую блокировку, а не просто потратила какое-то время на её создание).
 #
@@ -40,4 +44,4 @@ gawk '{
 }' |
 
 sort -rn |
-head -n 100 > TopTLOCKRegions.txt
+head -n 100 > LongestLockWaitsByRegions.txt

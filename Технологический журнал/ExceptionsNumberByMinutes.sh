@@ -4,7 +4,7 @@
 #
 grep -oP ".*,EXCP," */*.log |
 
-# Удаляем UTF-8 BOM!
+# Удаляем из потока данных UTF-8 BOM.
 #
 perl -pe 's/\xef\xbb\xbf//g' |
 

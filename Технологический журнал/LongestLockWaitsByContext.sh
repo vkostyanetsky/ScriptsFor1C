@@ -7,6 +7,10 @@
 #
 cat rphost_*/*.log |
 
+# Удаляем из потока данных UTF-8 BOM.
+#
+perl -pe 's/\xef\xbb\xbf//g' |
+
 gawk -F',Context=' -vRS='[0-9]+:[0-9]+.[0-9]+-' '{
 
     # Фильтруем TLOCK, у которых заполнено свойство WaitConnections (т.е. платформа реально ждала
@@ -43,4 +47,4 @@ gawk -F',Context=' -vRS='[0-9]+:[0-9]+.[0-9]+-' '{
 sort -rn |
 head -n 100 |
 
-sed -r "s/<LF>/\n/g" > TopTLOCKContext.txt
+sed -r "s/<LF>/\n/g" > LongestLockWaitsByContext.txt
