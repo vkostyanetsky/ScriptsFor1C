@@ -20,14 +20,13 @@ gawk -F'\n' -vRS='DBCC results for ' '{
     {
         IsTable = match($1, /^._.*\./) != 0
         
-        if (IsTable) {
-        
+        if (IsTable)
+        {        
             # Отрезаем от имени таблицы кавычки и точку в конце.
             #
             Table = substr($1, 2, length($1) - 3)
 
             Tables[Table] = Table
-        
         }
                 
         print $0 "\n" > "DBCC CHECKDB Errors.txt"
