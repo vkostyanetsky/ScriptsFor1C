@@ -16,7 +16,7 @@ gawk -F'\n' -vRS='DBCC results for ' '{
     
     # Если следующая строка начинается с «There are», то ошибок для объекта нет.
     #
-    if ($2 !~ "There are .*") 
+    if ($2 !~ "^There are .*") 
     {
         IsTable = match($1, /^._.*\./) != 0
         
