@@ -37,7 +37,8 @@ END {
 
     asort(Tables)
 
-    for (Table in Tables) {
+    for (Table in Tables)
+    {
         print Tables[Table] > "DBCC CHECKDB Tables.txt"
     }
     
