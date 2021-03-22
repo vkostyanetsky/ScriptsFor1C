@@ -10,6 +10,10 @@ $pair           = "$($user):$($pass)"
 $encodedCreds   = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
 $basicAuthValue = "Basic $encodedCreds"
 
-Invoke-WebRequest -uri "$apiUrl/User?UserLogin=Administrator" `
+$answer = Invoke-WebRequest -uri "$apiUrl/User?UserLogin=Administrator" `
 -Method Get `
 -headers @{'Authorization' = $basicAuthValue; 'Content-Type'= 'application/json'}
+
+$result = ConvertFrom-Json -InputObject $answer
+    
+$result
