@@ -5,7 +5,7 @@
 #   2. область наложения блокировки (Regions)
 #
 # Пример вызова:
-#   bash LocksByConnectID.sh 80283 InfoRg55705
+#   bash LocksByConnectIDAndRegions.sh 80283 InfoRg55705
 #
 
 # Для удобства дальнейшей работы добавим в вывод имена файлов и номера строк.
@@ -32,13 +32,13 @@ perl -pe 's/\xef\xbb\xbf//g; s/\r\n/<AWK LB>/g' |
 # Помимо этого, вытащим дату/время события и вынесем его в начало строки:
 # тогда sort сможет с этим работать.
 #
-perl -pe 's/(rphost_[0-9]+\/([0-9]+)\.log:[0-9]+:([0-9]+:[0-9]+\.[0-9]+)-[0-9]+)/<AWK RS>\2 \3 \1/g' |
+perl -pe 's/(rphost_[0-9]+\/([0-9]+)\.log:[0-9]+:([0-9]+):([0-9]+\.[0-9]+)-[0-9]+)/<AWK RS>\2\3\4 \1/g' |
 
 # Разделим поток на отдельные события с помощью маркера <AWK RS> и проанализируем:
 # подходят эти события под условия из параметров скрипта или нет. Если подходят —
 # отдельными строками для каждого выведем поля Locks и alreadyLocked (если есть).
 #
-gawk -vCONNECTID=$1 -vREGIONS=$2 -vRS='<AWK RS>' '
+gawk -vCONNECTID=$1 -vREGIONS=$2 -vLB='<AWK LB>' -vRS='<AWK RS>' '
 
 function GetFieldValue(FieldValues, BeginsWith)
 {
@@ -70,13 +70,13 @@ function GetFieldValue(FieldValues, BeginsWith)
         Locks           = GetFieldValue(FieldValues, "Locks=");
         alreadyLocked   = GetFieldValue(FieldValues, "alreadyLocked=");        
     
-        print $0 "\t" Locks "<AWK LB>" "\t" alreadyLocked "<AWK LB>";
+        print $0 "\t" Locks LB "\t" alreadyLocked LB;
     }
 }' |
 
 # Сортируем получившиеся события по времени — от самых ранних к самым поздним.
 #
-sort |
+sort -n |
 
 # Заменяем <AWK LB> обратно на переводы строк, чтобы результат был похож на исходный ТЖ.
 #
