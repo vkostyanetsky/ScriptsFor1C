@@ -76,7 +76,7 @@ function GetFieldValue(FieldValues, BeginsWith)
 
 # Сортируем получившиеся события по времени — от самых ранних к самым поздним.
 #
-sort -n |
+sort --ignore-leading-blanks --numeric-sort |
 
 # Заменяем <AWK LB> обратно на переводы строк, чтобы результат был похож на исходный ТЖ.
 #
