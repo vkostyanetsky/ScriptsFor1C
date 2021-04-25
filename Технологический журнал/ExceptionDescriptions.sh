@@ -47,11 +47,7 @@ function GetDescription(Input) {
         Description = GetDescription($0);
         
         ExceptionDescriptions[Exception][Description] += 1;
-        
-        if (Exception ~ "SessionID=1") {
-            print $0;
-        }
-                        
+                                
     }
 };
 
