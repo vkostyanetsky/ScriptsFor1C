@@ -89,5 +89,4 @@ descriptions = get_descriptions()
 write_descriptions()
 
 seconds = time.time() - start_time
-
 print("--- %s seconds ---" % seconds)
