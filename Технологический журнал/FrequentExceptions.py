@@ -1,14 +1,23 @@
+# Топ пояснений к исключительным ситуациям.
+#
+# Строится на базе значения свойства Descr у событий EXCP. Для каждого уникального пояснения
+# выводится количество повторений.
+
 import os
 import re
 import glob
 import time
 
+# Выводит время работы скрипта в секундах.
+#
 def print_time():
 
     seconds = time.time() - start_time
     
     print("--- %s seconds ---" % seconds)
 
+# Читает файлы ТЖ и считает повторения для каждого уникального пояснения.
+#
 def get_descriptions():
 
     def is_event_first_line():
@@ -73,6 +82,8 @@ def get_descriptions():
         
     return descriptions
 
+# Сортирует пояснения по количеству повторений и выводит в файл.
+#
 def sort_and_write_descriptions():
 
     sorted_keys = sorted(descriptions, key = descriptions.get, reverse = True) 
