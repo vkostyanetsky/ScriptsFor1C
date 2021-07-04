@@ -83,7 +83,7 @@ def sort_and_write_descriptions():
         description = sorted_key.strip()
         number      = descriptions[sorted_key]
 
-        line = "\n\n{}\n\n{}".format(number, description)
+        line = "\n\n--- {} items ---\n\n{}".format(number, description)
         output_file.write(line)
 
     output_file.close()
