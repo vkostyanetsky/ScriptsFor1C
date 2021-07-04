@@ -3,6 +3,12 @@ import re
 import glob
 import time
 
+def print_time():
+
+    seconds = time.time() - start_time
+    
+    print("--- %s seconds ---" % seconds)
+
 def get_descriptions():
 
     def is_event_first_line():
@@ -67,7 +73,7 @@ def get_descriptions():
         
     return descriptions
 
-def write_descriptions():
+def sort_and_write_descriptions():
 
     sorted_keys = sorted(descriptions, key = descriptions.get, reverse = True) 
     output_file = open('FrequentExceptions.txt', 'w', encoding = 'utf-8-sig')
@@ -86,7 +92,6 @@ start_time = time.time()
 
 descriptions = get_descriptions()
 
-write_descriptions()
+sort_and_write_descriptions()
 
-seconds = time.time() - start_time
-print("--- %s seconds ---" % seconds)
+print_time()
