@@ -20,12 +20,16 @@ def print_time():
 #
 def get_descriptions():
 
+    # Определяет, является ли строка первой для какого-то события.
+    #
     def is_event_first_line():
             
         result = re.match('[0-9]{2}:[0-9]{2}.[0-9]+-[0-9]+,.+,', line)
             
         return result != None
 
+    # Извлекает пояснение из строк события и увеличивает соответствующий счётчик повторений.
+    #
     def add_description(event_lines):
 
         if len(event_lines) > 0:
