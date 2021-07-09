@@ -28,7 +28,7 @@ function GetDuration(Input) {
 
     # Мы разделили события по времени их начала, поэтому набор цифр до запятой — это продолжительность события.    
     #
-    return substr(Input, 0, index(Input, ",") - 1);
+    return int(substr(Input, 0, index(Input, ",") - 1));
     
 }
 
